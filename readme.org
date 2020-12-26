@@ -1,0 +1,39 @@
+* Softmax and log-sum-exp functions
+
+* About
+
+=softmax= and =logsumexp= evaluate the softmax function and the log-sum-exp
+function of a vector x.  Softmax is the derivative of log-sum-exp.
+$\mathrm{lse}(x) = \log \sum_{i=1}^n \mathrm{e}^{x_i}$.
+
+Other program files are
+
+- =test=: runs some simple tests of the functions.
+
+* Usage
+
+#+begin_src 
+sm = softmax(x)
+[sm,lse] = softmax(x)
+lse = logsumexp(x)
+[lse,sm] = logsumexp(x)
+#+end_src
+
+compute the softmax sm and the log-sum-exp lse at the vector x.
+Both functions can compute both quantities because there is a lot of
+overlap in the computations of the two functions.
+
+* Requirements
+
+The code was developed in MATLAB R2020b and works with versions
+back to at least R2017a.
+
+* References
+
+P. Blanchard, D. J. Higham, and N. J. Higham.  
+computing the log-sum-exp and softmax functions. 
+J. Numer. Anal., Advance access, 2020.
+
+* License
+
+See =license.txt= for licensing information.

@@ -1,11 +1,10 @@
 function [sm,lse] = softmax(x)
 %SOFTMAX    Softmax function.
 %    sm = SOFTMAX(x) returns the softmax function evaluated at
-%    the vector x.
+%    the vector x, defined by sm = exp(x)/sum(exp(x)).
 %    [sm,lse] = SOFTMAX(x) also returns the log-sum-exp function evaluated
-%    at x.
-%    The functions are defined by lse = log(sum(exp(x)) and
-%    sm = exp(x)/sum(exp(x)) but are computed in way that avoids overflow and 
+%    at x, defined by lse = log(sum(exp(x)).
+%    The functions are computed in way that avoids overflow and 
 %    optimizes numerical stability.   
 
 %    Reference:

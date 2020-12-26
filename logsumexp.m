@@ -1,11 +1,10 @@
 function [lse,sm] = logsumexp(x)
 %LOGSUMEXP  Log-sum-exp function.
 %    lse = LOGSUMEXP(x) returns the log-sum-exp function evaluated at 
-%    the vector x.
-%    [lse,sm] = SOFTMAX(x) also returns the softmax function evaluated
-%    at x.
-%    The functions are defined by lse = log(sum(exp(x)) and
-%    sm = exp(x)/sum(exp(x)) but are computed in way that avoids overflow and 
+%    the vector x, defined by lse = log(sum(exp(x)).
+%    [lse,sm] = LOGSUMEXP(x) also returns the softmax function evaluated
+%    at x, defined by sm = exp(x)/sum(exp(x)).
+%    The functions are computed in way that avoids overflow and 
 %    optimizes numerical stability.   
 
 %    Reference:
