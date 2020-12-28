@@ -4,16 +4,14 @@
 
 =logsumexp= and =softmax= and evaluate the 
 log-sum-exp function 
+$\mathrm{lse}(x) = \log \sum_{i=1}^n \mathrm{e}^{x_i}$
 and the 
-softmax function of a vector x.  
+softmax function $g(x)$ with 
+$g_j(x) = \frac{\mathrm{e}^{x_j}}{\sum_{i=1}^n \mathrm{e}^{x_i}}$,
+where x is a vector.
 Softmax is the derivative of log-sum-exp.
-$\mathrm{lse}(x) = \log \sum_{i=1}^n \mathrm{e}^{x_i}$.
 
-${lse}(x) = \log \sum_{i=1}^n {e}^{x_i}$.
-
-Other program files are
-
-- =test=: runs some simple tests of the functions.
+Also provided is =test=, which some simple tests of the functions.
 
 * Usage
 
