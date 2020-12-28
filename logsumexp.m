@@ -4,7 +4,7 @@ function [lse,sm] = logsumexp(x)
 %    the vector x, defined by lse = log(sum(exp(x)).
 %    [lse,sm] = LOGSUMEXP(x) also returns the softmax function evaluated
 %    at x, defined by sm = exp(x)/sum(exp(x)).
-%    The functions are computed in way that avoids overflow and 
+%    The functions are computed in a way that avoids overflow and 
 %    optimizes numerical stability.   
 
 %    Reference:

@@ -11,7 +11,7 @@ $g_j(x) = \frac{e^{x_j}}{\sum_{i=1}^n e^{x_i}$,
 where x is a vector.
 Softmax is the derivative of log-sum-exp.
 
-Also provided is =test=, which some simple tests of the functions.
+Also provided is =test=, which runs some simple tests of the functions.
 
 * Usage
 
@@ -30,7 +30,7 @@ overlap in the computations of the two functions.
 * Requirements
 
 The code was developed in MATLAB R2020b and works with versions
-back to at least R2017a.
+back to at least R2016b.
 
 * References
 
