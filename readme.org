@@ -1,13 +1,13 @@
-* Log-sum-exp and softmax and functions
+* Log-sum-exp and softmax functions
 
 * About
 
-=logsumexp= and =softmax= and evaluate the 
+=logsumexp= and =softmax= evaluate the 
 log-sum-exp function 
-$\mathrm{lse}(x) = \log \sum_{i=1}^n \mathrm{e}^{x_i}$
+$lse(x) = \log \sum_{i=1}^n e^{x_i}$
 and the 
 softmax function $g(x)$ with 
-$g_j(x) = \frac{\mathrm{e}^{x_j}}{\sum_{i=1}^n \mathrm{e}^{x_i}}$,
+$g_j(x) = \frac{e^{x_j}}{\sum_{i=1}^n e^{x_i}$,
 where x is a vector.
 Softmax is the derivative of log-sum-exp.
 
