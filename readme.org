@@ -35,7 +35,7 @@ back to at least R2016b.
 * References
 
 P. Blanchard, D. J. Higham, and N. J. Higham.  
-[[Doi:10.1093/Imanum/Draa038][Computing the Log-Sum-Exp and Softmax Functions]]. 
+[[doi:10.1093/Imanum/Draa038][Computing the Log-Sum-Exp and Softmax Functions]]. 
 IMA J. Numer. Anal., Advance access, 2020.
 
 * License
